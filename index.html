@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="appGame">
+    <head>
+        <title>Game - AngularJS</title>        
+        <link href='app/css/style.css' rel='stylesheet' type='text/css'>
+        <link href='app/css/bootstrap.css' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="app/img/icon.png">
+        <link rel="author" href="fabricioronchi.com">
+        <meta name="description" content="AngularJS, HTML5, CSS3, Canvas, Game, Javascript.."></head>            
+    </head>   
+    <body ng-controller="ctrlGame">
+    	<div class="title">
+    		<p>Game - AngularJS</p>
+    	</div>    	
+    	<div ng-show="!viewGame" class="text-center play">
+    		<a type="button" class="btn my-btn btn-default btn-lg" ng-click="play()">Jogar</a>    		
+    	</div>     
+        <div ng-show="viewGame" class="pts-jogador">
+            <p>Pontos: {{pontosJogador}}</p>
+        </div>                                               
+		<canvas ng-show="viewGame" id="canvas" width="800" height="400"></canvas>
+		<script src="app/js/angular.min.js"></script>
+		<script src="app/js/logica.js"></script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+canvas {	
+	margin-top: 100px;
+	background: url(../img/fundoGame.jpg);
+	border: 2px solid white;		
+}
+
+.pts-jogador{
+	font-size: 20px;
+	color: white;
+	margin-bottom: -90px;
+	margin-top: 40px;
+}
+
+.title{
+	color: white;
+	margin-top: 35px;
+	text-align: center;
+	font-family: 'Frijole', cursive; 
+	font-size: 45px;
+}
+
+body{
+	text-align: center;
+	background-color: #1D1F21 !important;
+}
+
+.my-btn{
+	text-align: center;
+	width: 150px;
+}
+
+.play{
+	margin-top: 50px;
+}
