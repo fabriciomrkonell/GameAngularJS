@@ -1,4 +1,4 @@
 GameAngularJS
 =============
 
-Jogo feito com AngularJS.
+Game feito com AngularJS.
